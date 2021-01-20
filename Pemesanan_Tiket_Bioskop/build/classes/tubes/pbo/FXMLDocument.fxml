@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="830.0" style="-fx-background-color: #CC86F0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tubes.pbo.FXMLDocumentController">
+   <children>
+      <TableView fx:id="tabelTiket" layoutX="332.0" layoutY="137.0" prefHeight="412.0" prefWidth="498.0">
+        <columns>
+          <TableColumn fx:id="col_noKursi" prefWidth="65.0" text="NO.KUSI" />
+          <TableColumn fx:id="col_jenisTiket" prefWidth="85.0" text="JENIS TIKET" />
+            <TableColumn fx:id="col_harga" prefWidth="90.0" text="HARGA" />
+            <TableColumn fx:id="col_jumlah" prefWidth="123.0" text="JUMLAH PESANAN" />
+            <TableColumn fx:id="col_total" prefWidth="134.0" text="TOTAL HARGA" />
+        </columns>
+      </TableView>
+      <TextField fx:id="text_noKursi" layoutX="143.0" layoutY="145.0" />
+      <Button fx:id="button_tambah" layoutX="22.0" layoutY="453.0" mnemonicParsing="false" text="TAMBAH" />
+      <Label layoutX="305.0" layoutY="30.0" text="PEMESANAN  TIKET BIOSKOP" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text_jenisTiket" layoutX="143.0" layoutY="202.0" />
+      <TextField fx:id="text_harga" layoutX="143.0" layoutY="262.0" />
+      <TextField fx:id="text_jumlah" layoutX="143.0" layoutY="318.0" />
+      <TextField fx:id="text_total" layoutX="143.0" layoutY="368.0" />
+      <Button fx:id="button_hapus" layoutX="110.0" layoutY="453.0" mnemonicParsing="false" text="HAPUS" />
+      <Button fx:id="button_edit" layoutX="190.0" layoutY="453.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" text="EDIT" />
+      <Button fx:id="button_cancel" layoutX="260.0" layoutY="453.0" mnemonicParsing="false" text="CANCEL" />
+      <Label layoutX="28.0" layoutY="149.0" text="NO.KURSI">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="206.0" text="JENIS TIKET">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="269.0" text="HARGA">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="22.0" layoutY="322.0" text="JUMLAH PESANAN">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="22.0" layoutY="372.0" text="TOTAL HARGA">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
