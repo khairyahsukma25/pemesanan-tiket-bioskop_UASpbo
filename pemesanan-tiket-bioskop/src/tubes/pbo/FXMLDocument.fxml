@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="886.0" style="-fx-background-color: #CC86F0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tubes.pbo.FXMLDocumentController">
+   <children>
+      <TableView fx:id="tabel_tiket" layoutX="337.0" layoutY="107.0" onMouseClicked="#handleMouseAction" prefHeight="482.0" prefWidth="552.0">
+        <columns>
+          <TableColumn fx:id="col_no_kursi" prefWidth="96.0" text="NO.KURSI" />
+          <TableColumn fx:id="col_jenis_tiket" prefWidth="76.0" text="JENIS TIKET" />
+            <TableColumn fx:id="col_harga" prefWidth="99.0" text="HARGA" />
+            <TableColumn fx:id="col_jumlah" prefWidth="144.0" text="JUMLAH PESANAN" />
+            <TableColumn fx:id="col_total" prefWidth="151.0" text="TOTAL HARGA" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_kursi" layoutX="143.0" layoutY="145.0" />
+      <Button fx:id="button_tambah" layoutX="22.0" layoutY="453.0" mnemonicParsing="false" onAction="#tambah_data" text="TAMBAH" />
+      <Label layoutX="260.0" layoutY="23.0" text="PEMESANAN  TIKET BIOSKOP">
+         <font>
+            <Font name="Bookman Old Style Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_jenis_tiket" layoutX="143.0" layoutY="202.0" />
+      <TextField fx:id="txt_harga" layoutX="143.0" layoutY="262.0" />
+      <TextField fx:id="txt_jumlah_pesanan" layoutX="143.0" layoutY="318.0" />
+      <TextField fx:id="txt_total_harga" layoutX="143.0" layoutY="368.0" />
+      <Button fx:id="button_hapus" layoutX="110.0" layoutY="453.0" mnemonicParsing="false" onAction="#hapus" text="HAPUS" />
+      <Button fx:id="button_edit" layoutX="190.0" layoutY="453.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="54.0" text="EDIT" />
+      <Label layoutX="41.0" layoutY="149.0" text="NO.KURSI" />
+      <Label layoutX="43.0" layoutY="206.0" text="JENIS TIKET" />
+      <Label layoutX="48.0" layoutY="266.0" text="HARGA" />
+      <Label layoutX="22.0" layoutY="322.0" text="JUMLAH PESANAN" />
+      <Label layoutX="28.0" layoutY="372.0" text="TOTAL HARGA" />
+   </children>
+</AnchorPane>
