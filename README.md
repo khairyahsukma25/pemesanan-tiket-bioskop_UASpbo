@@ -3,8 +3,8 @@
 
 > Anggota Kelompok :
 > 1. Khairyah Sukma(1907051005) : mengimplementasikan ke source code dan database 
-> Berli Mega Antika(1907051008) : membuat interface javafx
-> Maria Olivia Lestiyaningrum(1907051039) : membuat class diagram dan erd
+> 2. Berli Mega Antika(1907051008) : membuat interface javafx
+> 3. Maria Olivia Lestiyaningrum(1907051039) : membuat class diagram dan erd
 
 > Untuk pengerjaan dilakukan secara bersama-sama menggunakan google meet 
 
